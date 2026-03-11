@@ -31,9 +31,27 @@ public class Main {
         vuelos.add(new Vuelo(9,"H009-V","Delta", "New York","Madrid",LocalDate.of(2025,6,10),LocalDate.of(2025,6,11)));
         vuelos.add(new Vuelo(10,"H010-V","LATAM","Buenos Aires","Barcelona",LocalDate.of(2025,5,12),LocalDate.of(2025,5,13)));
 
+        //Mostarmos todos los vuelos antes de aplicar el filtro
+        System.out.println("Lista completa de vuelos:\n");
+
+        for (vuelo v : vuelos) {
+            System.out.println(v);
+        }
+
         //Aplicamos el filtro
         List<Vuelo> vuelosFiltrados =
                 VueloUtils.filtrarVuelos(vuelos, fechaInicio, fechaFin);
+
+        //Mostramos las fechas
+        System.out.println("\nFecha inicio: " + fechaInicio);
+        System.out.println("Fecha fin: " + fechaFin);
+
+        //Mostramos los vuelos filtrados
+        System.out.println("\nVuelos filtrados:\n");
+
+        for (Vuelo v : vuelosFiltrados) {
+            System.out.println(v);
+        }
 
         //Mostramos los resultados
         System.out.println("Fecha inicio: " + fechaInicio);
