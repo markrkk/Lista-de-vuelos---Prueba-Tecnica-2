@@ -3,11 +3,10 @@
 # Descripción
 
 Este proyecto es una aplicacion sencilla desarrollada en Java que permite filtrar una lista de vuelos segun distintos criterios de busqueda basados en fechas.
-El programa crea una lista de vuelos de prueba y aplica un filtro utilizando una fecha de inicio y una fecha de fin.
-Dependiendo de las fechas indicadas, el programa devuelve los vuelos que cumplen con el criterio de busqueda y los muestra en la terminal ordenados por fecha de salida.
+El programa primero muetra la lista completa de vuelos creados en el sistema. 
+Después aplica el filtro según las fechas indicadas y muestra los vuelos que cumplen con el criterio.
 
 ## Tecnologia utilizadas
-
 -Java
 -JDK 17
 -API "LocalDate"
